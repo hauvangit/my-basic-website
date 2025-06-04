@@ -1,35 +1,17 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-​
-    <title>Huong Widget TEST ENV </title>
-    <meta name="description" content="The HTML5 Herald" />
-    <meta name="author" content="Huong Vo" />
-  </head>
-​
-  <body>
-    <h1>Environment: TEST </h1>
-​
-    <script>
-      function loadLanguage() {
-        var language = localStorage.getItem('lang');
-        if (!language) {
-          language = 'en';
-        }
-        document.documentElement.lang = language;
-        document.getElementById('language').value = language;
-      }
-      loadLanguage();
-      function changeLanguage() {
-        var language = document.getElementById('language').value;
-        localStorage.setItem('lang', language);
-        location.reload();
-      }
-    </script>
-​
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-​
-<script type='text/javascript'>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Basic Website</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        h1 { color: #2e8b57; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Website!</h1>
+    <p>This is a simple page hosted for free using GitHub Pages.</p>
+  <script type='text/javascript'>
     (function(o,l) {
         window.oliviaChatData = window.oliviaChatData || [];
         window.oliviaChatBaseUrl = o;
@@ -43,5 +25,5 @@
         s.parentNode.insertBefore(apply, s);
     })('https://test.paradox.ai', 'yuwjfhpcwaqxzbjfigvy');
 </script>
-  </body>
+</body>
 </html>
